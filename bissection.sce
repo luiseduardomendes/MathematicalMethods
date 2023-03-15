@@ -5,6 +5,7 @@ function [p] = bissection(f, a, b, TOL, N)
         fa = f(a);
         fp = f(p);
         if (fp == 0 | (b-a)/2 < TOL) then
+            disp(i);
             return 
         end
         if (fa * fp < 0) then
